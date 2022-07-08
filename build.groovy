@@ -12,7 +12,7 @@ pipeline {
 
             }
         }
-    }
+    
         stage("build code"){
             steps{
                 println "go build"
@@ -20,4 +20,5 @@ pipeline {
                 sh "ls -l target/"
             }
         }
+    }
 }
