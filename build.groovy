@@ -9,7 +9,7 @@ pipeline {
                 sh "ls -l"
                 sh "ls -lart ./*"
                 //credentialsId: 'slaveid',
-                git branch: 'main' url: 'https://github.com/sivalakshmanna/cicd-demo-golang'
+                git branch: 'main', url: 'https://github.com/sivalakshmanna/cicd-demo-golang.git'
             }
         }
         stage("Build code"){
